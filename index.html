@@ -9,14 +9,25 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
   <style>
     input {
-      color: rgba(110, 110, 110, 1);
-      background-color: rgba(227, 227, 227, 1);
-      font-Family: "Montserrat";
-      font-Size: "12px";
-      font-Style: "normal";
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
       font-Weight: 400;
-      line-Height: "15px /* 125% */";
+      line-height: 15px
+        /* 125% */
+      ;
       border: none;
+      width: 299px;
+      /* left: 500px; */
+    }
+
+    a {
+      text-decoration: none !important
+    }
+
+    button {
+      border: none;
+      cursor: pointer !important;
     }
   </style>
 </head>
@@ -117,13 +128,13 @@
     </div>
     <div class="fill-in-form">
       <div class="fill-in-form-child"></div>
-      <div class="fill-in-form-item"></div>
-      <div class="fill-in-form-inner"></div>
-      <div class="fill-in-form-child1"></div>
-      <input type="text" class="full-name" placeholder="Full name">
-      <input type="text" class="phone-number" placeholder="Phone number"
+      <!-- <div class="fill-in-form-item"></div> -->
+      <!-- <div class="fill-in-form-inner"></div> -->
+      <!-- <div class="fill-in-form-child1"></div> -->
+      <input type="text" class="full-name fill-in-form-child1" placeholder="Full name">
+      <input type="text" class="phone-number fill-in-form-child1" placeholder="Phone number"
         oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-      <input type="text" class="location" placeholder="Location">
+      <input type="text" class="location fill-in-form-child1" placeholder="Location">
       <img class="person-icon" alt="" src="./public/person.svg" />
       <img class="call-icon1" alt="" src="./public/call1.svg" />
       <img class="distance-icon" alt="" src="./public/distance.svg" />
@@ -137,11 +148,11 @@
       </div>
       <!-- <div class="fill-in-form-child2"></div> -->
       <button class="proceed" style="width:236px; height: 42px ; flex-Shrink: 0; border-Radius: 6px ;
-        background: rgba(19, 142, 209, 1); border: none; ">Procced</button>
-      <!-- <div class=" proceed">Proceed
-    </div> -->
+        background: rgba(19, 142, 209, 1);">Procced</button>
+      <!-- <div class=" proceed">Proceed </div> -->
       <div class="fill-in-the">Fill in the details to get a call!</div>
     </div>
+
     <div class="offer-line">
       <div class="offer-line-child"></div>
       <div class="offer-line-item"></div>
@@ -211,20 +222,20 @@
         <img class="nil-logo-transparent-1-11" alt="" src="./public/nil-logo-transparent-1-11@2x.png" />
       </div>
       <div class="lab-tests-parent">
-        <div class="lab-tests2">Lab tests</div>
-        <div class="home">Home</div>
-        <div class="health-conditions">Health conditions</div>
-        <div class="medicines">Medicines</div>
+        <a class="lab-tests2" href="#">Lab tests</a>
+        <a class="home" href="#">Home</a>
+        <a class="health-conditions" href="#">Health conditions</a>
+        <a class="medicines" href="#">Medicines</a>
       </div>
-      <div class="header-item"></div>
-      <div class="header-inner"></div>
-      <div class="component-11">
+      <!-- <div class="header-item"></div>
+      <div class="header-inner"></div> -->
+      <button class="component-11">
         <div class="component-11-child"></div>
         <div class="play-store">Play store</div>
         <img class="component-11-item" alt="" src="./public/rectangle-48@2x.png" />
-      </div>
-      <div class="for-patients">For patients</div>
-      <div class="for-hospitals">For hospitals</div>
+      </button>
+      <button class="for-patients">For patients</button>
+      <button class="for-hospitals">For hospitals</button>
     </div>
     <div class="top-packages-parent">
       <div class="top-packages">
@@ -306,26 +317,34 @@
           <div class="div14">5+</div>
           <div class="labs">Labs</div>
         </div>
-        <div class="component-16">
-          <div class="component-15-child"></div>
+        <div class="lift">
+          <div class="component-16">
+            <div class="component-15-child"></div>
+          </div>
+          <div class="div15">100+</div>
+          <div class="collection-centers">Collection centers</div>
         </div>
-        <div class="div15">100+</div>
-        <div class="collection-centers">Collection centers</div>
-        <div class="component-17">
-          <div class="component-15-child"></div>
+        <div class="lift">
+          <div class="component-17">
+            <div class="component-15-child"></div>
+          </div>
+          <div class="div16">1000+</div>
+          <div class="monthly-tests">Monthly tests</div>
         </div>
-        <div class="div16">1000+</div>
-        <div class="monthly-tests">Monthly tests</div>
-        <div class="component-18">
-          <div class="component-15-child"></div>
+        <div class="lift">
+          <div class="component-18">
+            <div class="component-15-child"></div>
+          </div>
+          <div class="div17">2200</div>
+          <div class="test-menu">Test menu</div>
         </div>
-        <div class="div17">2200</div>
-        <div class="test-menu">Test menu</div>
-        <div class="component-19">
-          <div class="component-15-child"></div>
+        <div class="lift">
+          <div class="component-19">
+            <div class="component-15-child"></div>
+          </div>
+          <div class="div18">5+</div>
+          <div class="cities-present-in">Cities present in</div>
         </div>
-        <div class="div18">5+</div>
-        <div class="cities-present-in">Cities present in</div>
       </div>
     </div>
     <div class="accreditation">
