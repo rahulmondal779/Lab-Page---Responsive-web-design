@@ -20,7 +20,8 @@
 
 .bg-child,
 .bg-item {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   width: 1440px;
 }
 
